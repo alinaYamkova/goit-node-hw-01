@@ -39,9 +39,8 @@ async function removeContact(contactId) {
 async function addContact(name, email, phone) {
   const contacts = await getContacts();
   const newContact = { id: uuidv4(), name, email, phone };
-  const updatedContacts  = contacts.push(newContact);
-  await fs.writeFile(contactsPath, JSON.stringify(updatedContacts, null, 2))
-  return updatedContacts;
+  contacts.push(newContact);
+  await fs.writeFile(contactsPath, JSON.stringify({contacts}));
 }
 
 //Сделай экспорт созданных функций через module.exports
