@@ -10,7 +10,6 @@ const {
 // removeContact(3);
 // addContact("aaa", 'aaa@aa.aa', 789456)
 
-//або 
 // const argv = require('yargs').argv;
 //або
 const { Command } = require("commander");
