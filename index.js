@@ -4,13 +4,14 @@ const {
   getContactById,
   removeContact,
   addContact,
-} = require("./contacts");
+} = require("./contacts.js");
 // listContacts;
 // getContactById(2);
 // removeContact(3);
 // addContact("aaa", 'aaa@aa.aa', 789456)
 
-//або const argv = require('yargs').argv;
+//або 
+// const argv = require('yargs').argv;
 //або
 const { Command } = require("commander");
 const program = new Command();
@@ -46,6 +47,6 @@ function invokeAction({ action, id, name, email, phone }) {
     default:
       console.warn("\x1B[31m Unknown action type!");
   }
-}
+};
 
 invokeAction(argv);

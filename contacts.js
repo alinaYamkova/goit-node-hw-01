@@ -50,7 +50,6 @@ async function addContact(name, email, phone) {
 // removeContact('b75cd2ea-1126-4115-b761-f5eb2373ca3a');
 // addContact('Anna Maria', 'ann@mnn.com', '(999)464566');
 
-// Сделай экспорт созданных функций через module.exports
 module.exports = {
   listContacts,
   getContactById,

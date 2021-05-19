@@ -23,7 +23,9 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "commander": "^7.2.0",
     "uuid": "^8.3.2",
-    "uuidv4": "^6.2.8"
+    "uuidv4": "^6.2.8",
+    "yargs": "^17.0.1"
   }
 }
