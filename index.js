@@ -1,17 +1,10 @@
-//Сделай импорт модуля contacts.js и проверь функци для работы с контактами
 const {
   listContacts,
   getContactById,
   removeContact,
   addContact,
 } = require("./contacts.js");
-// listContacts;
-// getContactById(2);
-// removeContact(3);
-// addContact("aaa", 'aaa@aa.aa', 789456)
 
-// const argv = require('yargs').argv;
-//або
 const { Command } = require("commander");
 const program = new Command();
 program

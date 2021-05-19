@@ -1,9 +1,7 @@
-//Сделай импорт модулей fs и path
 const fs = require("fs").promises;
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 
-//Создай переменную contactsPath и запиши в нее путь к файле contacts.json, ипользуй методы модуля path
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 async function listContacts() {
